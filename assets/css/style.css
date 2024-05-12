@@ -407,7 +407,7 @@ main {
   min-width: 100%;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
 
 .contact-info {
@@ -505,6 +505,26 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
+
+.skills-title {
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Adjusts items to line up at the start of the container */
+  align-items: center; /* Centers items vertically */
+  padding: 10px;
+}
+
+.skills-item {
+  width: 100px; /* Width of each item */
+  margin: 10px; /* Adds some space around each item */
+  text-align: center;
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
 
 
 
@@ -795,6 +815,18 @@ main {
   margin-bottom: 7px;
 }
 
+.timeline-item-title a {
+  display:inline;
+  color: var(--white-2); /* Ensure this is your variable for white color */
+  text-decoration: none; /* Removes underline */
+}
+
+.timeline-item-title a:hover, .timeline-item-title a:focus {
+  text-decoration: underline; /* Adds underline on hover for better user interaction visibility */
+  color: var(--white-2); /* Keeps the color white on hover */
+}
+
+
 .timeline-list span {
   color: var(--vegas-gold);
   font-weight: var(--fw-400);
@@ -834,7 +866,7 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+/* .skills-title { margin-bottom: 20px; }
 
 .skills-list { padding: 20px; }
 
@@ -865,7 +897,7 @@ main {
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
-}
+} */
 
 
 

@@ -859,6 +859,7 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  text-align: justify;
 }
 
 
@@ -1058,6 +1059,37 @@ main {
   font-weight: var(--fw-300);
 }
 
+.project-content .article-title { 
+  position: relative; /* Establishes positioning context for the pseudo-element */
+  margin-bottom: 15px; /* Spacing below the title */
+  display: inline-block;
+ }
+
+
+.project-content .article-title::after {
+  content: ""; /* Necessary for the pseudo-element to show up */
+  display: block; /* Makes it a block element to fill width */
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--white-2); /* Color of the underline */
+  width: 100%; /* Ensures it matches the width of the title */
+}
+.project-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.project-text p { margin-bottom: 15px; }
+
+.project-video {
+  width: 60%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Match site's border radius */
+  box-shadow: var(--shadow-1); /* Consistent shadow with other elements */
+  display: block; /* Ensures the element is treated as a block-level element */
+  margin: 20px auto;
+}
 
 
 
